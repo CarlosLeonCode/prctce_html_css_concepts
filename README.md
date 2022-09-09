@@ -79,4 +79,93 @@ We have basic and combinators:
 
 ### Pseudoclasses & Pseudoelements
 
+A **pseudoclass** defines styles in a specific *state* of the element, for example:
 
+```css
+input:hover{
+    /* some properties here */
+}
+```
+
+Some of the Pseudoclasses are:
+
+- :Hover
+- :Active
+- :Visted
+- :Not
+- :nth-child
+
+A pseudoelement defines styles to some specific *part* of the element, for example:
+
+```css
+div::afer{
+    /* some properties here */
+}
+```
+
+Some of the Pseudoelements are:
+
+- ::before
+- ::after
+- ::first-letter
+
+### Display types
+
+We have the following kind of displays:
+
+- **block:** The element occupies all the space and the elements are positioned one below one. We can use **Width and Height
+**
+- inline
+- inline-block
+- flex
+- grid
+- none
+
+#### Flexbox
+
+This allows to order elements in only one way or axi; horizontal or vertical.
+
+
+### Grid
+
+This allows to order elements in two one ways or axis; horizontal or vertical.
+
+
+## CSS Architectures
+
+This allows to build our css with a bunch of rules and patterns to make easy to read and maintance the code.
+
+### OOCSS, BEM, SMACSS, ITCSS & ATOMIC DESIGN
+
+#### BEM (Block, Element and Modifier)
+
+This manages the classes by blocks, elements and modifiers.
+
+- Block: It's the main structure that contains other structures.
+
+- Element: This is a reference to the container.
+
+- Modifier: An specific style to some element.
+
+Rules:
+
+- [block]
+
+- [block]__[element]
+
+- [block]--[modificator]
+
+- [element]--[modificator]
+
+- [block]__[element]--[modificator]
+
+Example: 
+
+```css
+.button--active {  }
+.button__icon {  }
+```
+
+#### SMACSS (Scalable and Modular Architecture for CSS)
+
+Indicates that the order of the elements will be saved into folders.
